@@ -1,0 +1,10 @@
+{
+  "modid": "barnhorse_savethespire",
+  "name": "Save The Spire",
+  "author_list": ["barnhorse"],
+  "description": "Test Information",
+  "version": "0.0.1",
+  "sts_version": "06-22-2020",
+  "mts_version": "3.16.0",
+  "dependencies": ["basemod"]
+}
