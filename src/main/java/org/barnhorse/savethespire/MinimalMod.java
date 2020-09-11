@@ -8,30 +8,19 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @SpireInitializer
-public class SaveTheSpire implements
+public class MinimalMod implements
         basemod.interfaces.OnStartBattleSubscriber,
-        basemod.interfaces.OnCardUseSubscriber,
-        basemod.interfaces.StartGameSubscriber {
-    public static final Logger logger = LogManager.getLogger(SaveTheSpire.class.getName());
+        basemod.interfaces.OnCardUseSubscriber {
+    public static final Logger logger = LogManager.getLogger(MinimalMod.class.getName());
 
-    public static void fooBar(int i){}
-
-    public static void main(String args[]) {
-        System.out.println("Hello World");
-        for(int i = 0; i < 100; i++) {
-            fooBar(i);
-        }
-        System.exit(-1);
-    }
-    public SaveTheSpire() {
+    public MinimalMod() {
         BaseMod.subscribe(this);
     }
 
     @SuppressWarnings("unused")
     public static void initialize() {
-        logger.info("========================= Initializing SaveTheSpire Mod =========================");
-        SaveTheSpire mod = new SaveTheSpire();
-        logger.info("========================= SaveTheSpire Mod Initialized =========================");
+        logger.info("========================= Initializing MinimalMod Mod =========================");
+        MinimalMod mod = new MinimalMod();
     }
 
     @Override
@@ -46,10 +35,5 @@ public class SaveTheSpire implements
     @Override
     public void receiveCardUsed(AbstractCard abstractCard) {
         logger.info(" == Played card: " + abstractCard.name);
-    }
-
-    @Override
-    public void receiveStartGame() {
-        logger.info(" == Game Start");
     }
 }

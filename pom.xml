@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.barnhorse</groupId>
-    <artifactId>SaveTheSpire</artifactId>
+    <artifactId>MinimalMod</artifactId>
     <version>0.0.1</version>
     <packaging>jar</packaging>
-    <name>SaveTheSpire</name>
+    <name>MinimalMod</name>
     <description>Test Description</description>
 
     <properties>
@@ -44,7 +44,7 @@
     </dependencies>
 
     <build>
-        <finalName>SaveTheSpire</finalName>
+        <finalName>MinimalMod</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
